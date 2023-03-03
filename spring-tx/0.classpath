@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="src" path="/spring-context" exported="true"/>
+	<classpathentry kind="src" path="/spring-aop" exported="true"/>
+	<classpathentry kind="src" path="/spring-beans" exported="true"/>
+	<classpathentry kind="src" path="/spring-core" exported="true"/>
+	<classpathentry kind="lib" path="F:/real/caches/modules-2/files-2.1/com.ibm.websphere/uow/6.0.2.17/df754f8fe0c9c6f837d00ddcc12632fef16ec239/uow-6.0.2.17.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/javax.resource/connector-api/1.5/a8f177930b0abd2422c6b9601c756d8c48278add/connector-api-1.5-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/javax.resource/connector-api/1.5/a5cee35dc703a9d9ea305cc3f4a2baa7c4919145/connector-api-1.5.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1/1068f7bb97afc27b92be277a8c1a2c25e9a1196d/geronimo-jta_1.1_spec-1.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1/fe8d9046737540d728e4b82cf26dcdd8bf4b0eb1/geronimo-jta_1.1_spec-1.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/junit/junit/4.10/6c98d6766e72d5575f96c9479d1c1d3b865c6e25/junit-4.10-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.easymock/easymock/2.5.1/c5561ccd761571499eb5758c2daedb4bae57effc/easymock-2.5.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.easymock/easymock/2.5.1/b52b71f75bbf28fddb7f0334f2e74c080b927d8e/easymock-2.5.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.1/aba64ad8b0365a08ed4435c32e3ee2b2ff16f0a5/hamcrest-all-1.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.1/2ddcad726ed88eab63eb6666c60970db0ac6d44e/hamcrest-all-1.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.easymock/easymockclassextension/2.3/a763b72f6b6377ad50734f7ad4e6fa19d60ab0a7/easymockclassextension-2.3-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.easymock/easymockclassextension/2.3/8234f97ebe396696e86be25977569ffaaa9c23fc/easymockclassextension-2.3.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/2ccf1154d1a8936042a8a742dc3e611d02ac7213/hamcrest-core-1.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2/962f2bbd66901a9d67b0bb3c8c4a64ce6de0a8c4/cglib-nodep-2.2-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/cglib/cglib-nodep/2.2/59afed7ab65e7ec6585d5bc60556c3cbd203532b/cglib-nodep-2.2.jar" exported="true"/>
+</classpath>

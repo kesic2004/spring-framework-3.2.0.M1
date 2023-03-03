@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="src" path="/spring-asm" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.6.12/32c4b70cf8957f2c275ae72a5a45eef0ab940fb7/aspectjweaver-1.6.12-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.6.12/e885e7ba80175986cfd6a84b0ce118407621f11b/aspectjweaver-1.6.12.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/3.0/4079e9bee71d79d8fc37a4b0e3f689404b27d86e/jopt-simple-3.0-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/3.0/ca61ad9dac22a30dbf94376131edc2d1b3a01463/jopt-simple-3.0.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/log4j/log4j/1.2.15/adb444f39d8885f2d26f1d8f87dce9da1ecda049/log4j-1.2.15-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/log4j/log4j/1.2.15/f0a0d2e29ed910808c33135a3a5a51bba6358f7b/log4j-1.2.15.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/junit/junit/4.10/6c98d6766e72d5575f96c9479d1c1d3b865c6e25/junit-4.10-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.easymock/easymock/2.5.1/c5561ccd761571499eb5758c2daedb4bae57effc/easymock-2.5.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.easymock/easymock/2.5.1/b52b71f75bbf28fddb7f0334f2e74c080b927d8e/easymock-2.5.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.1/aba64ad8b0365a08ed4435c32e3ee2b2ff16f0a5/hamcrest-all-1.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.1/2ddcad726ed88eab63eb6666c60970db0ac6d44e/hamcrest-all-1.1.jar" exported="true"/>
+	<classpathentry kind="lib" path="F:/real/caches/modules-2/files-2.1/xmlunit/xmlunit/1.2/9a8543988f6a1a1e584ae7bef34fd88825c54e1e/xmlunit-1.2.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.codehaus.woodstox/wstx-asl/3.2.7/1908d3646b9057f242cfad6d038e19a27715b36d/wstx-asl-3.2.7-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.codehaus.woodstox/wstx-asl/3.2.7/252c7faae9ce98cb9c9d29f02db88f7373e7f407/wstx-asl-3.2.7.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/2ccf1154d1a8936042a8a742dc3e611d02ac7213/hamcrest-core-1.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar" exported="true"/>
+	<classpathentry kind="lib" path="F:/real/caches/modules-2/files-2.1/stax/stax-api/1.0.1/49c100caf72d658aca8e58bd74a4ba90fa2b0d70/stax-api-1.0.1.jar" exported="true"/>
+	<classpathentry kind="lib" path="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-asm/build/libs/spring-asm-3.2.0.M1.jar" exported="true"/>
+</classpath>

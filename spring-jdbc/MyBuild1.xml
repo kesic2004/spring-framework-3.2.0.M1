@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="package" name="jdbc">
+    
+    <!--根路径.-->
+    
+    <property name="rootPath" value="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1"/>
+    
+    <import file="${rootPath}/src/BaseBuild.xml"/>
+    
+    <import file="${rootPath}/src/AjBuild.xml"/>
+
+    
+    <!--模块名，定义为：模块所在文件夹和输出结果的前缀相同，如spring-core.-->
+    
+    <property name="moduleName" value="spring-${ant.project.name}"/>
+    
+    <!--模块路径.-->
+    
+    <property name="modulePath" value="${rootPath}/${moduleName}"/>
+
+    
+    <!--结果根路径.-->
+    
+    <property name="outputPath" value="${modulePath}/MyBuild"/>
+
+    
+    <!-- 编译输出路径.-->
+    
+    <property name="binaryPath" value="${outputPath}/bin"/>
+
+    
+    <!-- 源文件路径. -->
+    
+    <property name="srcPath1" value="${modulePath}/src/main/java">
+        <!--<property name="srcPath2" value="${modulePath}/src/main/resources"/>-->
+    </property>
+
+    
+    <path id="moduleReference">
+        <!--1553323154362-->
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-context/MyBuild/spring-context-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-beans/MyBuild/spring-beans-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-core/MyBuild/spring-core-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-tx/MyBuild/spring-tx-3.2.0.M1.jar"/>
+    </path>
+    
+    <path id="innerReference">
+        <!--1553323154369-->
+    </path>
+    
+    <path id="repositoryReference">
+        <!--1553323154369-->
+        <pathelement location="F:/real/caches/modules-2/files-2.1/c3p0/c3p0/0.9.1.2/4ea71601f844c4b90d22195bbdb58979281bb8b6/c3p0-0.9.1.2.jar"/>
+        <pathelement location="F:/real/caches/modules-2/files-2.1/org.apache.geronimo.specs/geronimo-jta_1.1_spec/1.1/fe8d9046737540d728e4b82cf26dcdd8bf4b0eb1/geronimo-jta_1.1_spec-1.1.jar"/>
+        <pathelement location="F:/real/caches/modules-2/files-2.1/org.apache.derby/derby/10.5.3.0_1/b0146dd76c2601a5a0632dd2e0b3b85e5b1b713/derby-10.5.3.0_1.jar"/>
+        <!--org.apache.commons.logging.Log not found!-->
+        <!--org.apache.commons.logging.LogFactory not found!-->
+    </path>
+
+    
+    <!--当前版本串.-->
+    
+    <property name="version" value="${VERSION}"/>
+    
+    <!--结果文件名.-->
+    
+    <property name="result" value="${moduleName}-${version}.jar"/>
+    
+    <!--结果文件路径.-->
+    
+    <property name="resultPath" value="${outputPath}/${result}"/>
+
+    
+    <target name="compile">
+        
+        <delete dir="${binaryPath}"/>
+        
+        <mkdir dir="${binaryPath}"/>
+        
+        <javac debug="${JAVAC_DEBUG}" destdir="${binaryPath}" encoding="${JAVAC_ENCODING}" failonerror="${JAVAC_FAILONERROR}" includeantruntime="${JAVAC_INCLUDEANTRUNTIME}" includejavaruntime="${JAVAC_INCLUDEJAVARUNTIME}" srcdir="${srcPath1}" verbose="${JAVAC_VERBOSE}">
+            
+            <classpath refid="moduleReference"/>
+            
+            <classpath refid="repositoryReference"/>
+            
+            <classpath refid="innerReference"/>
+        
+        </javac>
+    
+    </target>
+    
+    <target name="package" depends="compile">
+        
+        <delete file="${resultPath}"/>
+        
+        <jar basedir="${binaryPath}" compress="false" destfile="${resultPath}">
+            
+            <manifest>
+                
+                <attribute name="Implementation-Title" value="${moduleName}"/>
+                
+                <attribute name="Implementation-Version" value="${version}"/>
+            
+            </manifest>
+            
+            <fileset dir="${srcPath1}" includes="**/**">
+                <!--<fileset dir="${srcPath2}" includes="**/**"/>-->
+            </fileset>
+        
+        </jar>
+        
+        <delete dir="${binaryPath}"/>
+    
+    </target>
+</project>

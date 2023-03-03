@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="package" name="aspects">
+    
+    <!--根路径，根据实际情况修改. -->
+    
+    <property name="rootPath" value="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1"/>
+    
+    <import file="${rootPath}/src/BaseBuild.xml"/>
+    
+    <import file="${rootPath}/src/AjBuild.xml"/>
+
+    
+    <!--模块名，定义为：模块所在文件夹和输出结果的前缀相同，如spring-core.-->
+    
+    <property name="moduleName" value="spring-${ant.project.name}"/>
+    
+    <!--模块路径.-->
+    
+    <property name="modulePath" value="${rootPath}/${moduleName}"/>
+
+    
+    <!--结果根路径.-->
+    
+    <property name="outputPath" value="${modulePath}/${MY_BUILD}"/>
+
+    
+    <!-- 编译输出路径.-->
+    
+    <property name="binaryPath" value="${outputPath}/bin"/>
+
+    
+    <!-- 源文件路径. -->
+    
+    <property name="srcPath1" value="${modulePath}/src/main/java" />
+    <property name="srcPath2" value="${modulePath}/src/main/resources"/>
+    <!--</property>-->
+
+    
+    <path id="moduleReference">
+        <!--1552808933745-->
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-context/${MY_BUILD}/spring-context-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-beans/${MY_BUILD}/spring-beans-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-core/${MY_BUILD}/spring-core-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-tx/${MY_BUILD}/spring-tx-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-aop/${MY_BUILD}/spring-aop-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-orm/${MY_BUILD}/spring-orm-3.2.0.M1.jar"/>
+    </path>
+    
+    <path id="innerReference">
+        <!--1552808933745-->
+    </path>
+    
+    <path id="repositoryReference">
+        <!--1552808933745-->
+        <pathelement location="${DEPENDENCE_ROOT}/org.aspectj/aspectjrt/1.6.12/4b430390f227beba9a0e97117f5a23003caafeb3/aspectjrt-1.6.12.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/javax.persistence/persistence-api/1.0/5725f57873e05e068803e2bf9d5a8ea3740ffec5/persistence-api-1.0.jar"/>
+        <!--javax.persistence.EntityTransaction not found!-->
+        <!--org.springframework.beans.factory.aspectj.AnnotationBeanConfigurerAspect not found!-->
+        <!--javax.persistence.Query not found!-->
+        <!--javax.persistence.EntityManagerFactory not found!-->
+        <!--javax.persistence.EntityManager not found!-->
+        <pathelement location="${DEPENDENCE_ROOT}/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar"/>
+    </path>
+
+    <path id="aspectjrt">
+        <pathelement location="${DEPENDENCE_ROOT}/org.aspectj/aspectjweaver/1.6.12/e885e7ba80175986cfd6a84b0ce118407621f11b/aspectjweaver-1.6.12.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/org.aspectj/aspectjrt/1.6.12/4b430390f227beba9a0e97117f5a23003caafeb3/aspectjrt-1.6.12.jar"/>
+    </path>
+
+    <path id="aspectjtools">
+        <pathelement location="${DEPENDENCE_ROOT}/org.aspectj/aspectjrt/1.6.12/4b430390f227beba9a0e97117f5a23003caafeb3/aspectjrt-1.6.12.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/org.aspectj/aspectjtools/1.6.12/21ff60c6c0b4721560c3c9842e5001c811d61849/aspectjtools-1.6.12.jar"/>
+    </path>
+
+    <taskdef resource="org/aspectj/tools/ant/taskdefs/aspectjTaskdefs.properties">
+        <classpath refid="aspectjtools" />
+    </taskdef>
+
+
+    
+    <!--当前版本串.-->
+    
+    <property name="version" value="${VERSION}"/>
+    
+    <!--结果文件名.-->
+    
+    <property name="result" value="${moduleName}-${version}.jar"/>
+    
+    <!--结果文件路径.-->
+    
+    <property name="resultPath" value="${outputPath}/${result}"/>
+
+    
+    <target name="compile">
+        
+        <delete dir="${binaryPath}"/>
+        
+        <mkdir dir="${binaryPath}"/>
+        
+        <iajc debug="${AJ_DEBUG}" destdir="${binaryPath}" encoding="${JAVAC_ENCODING}" failonerror="${JAVAC_FAILONERROR}" source="${AJ_SOURCE_VERSION}" srcdir="${srcPath1}" target="${AJ_TARGET_VERSION}" verbose="${JAVAC_VERBOSE}">
+            
+            <aspectpath refid="moduleReference"/>
+            
+            <aspectpath refid="repositoryReference"/>
+            
+            <aspectpath refid="innerReference"/>
+            
+            <aspectpath refid="aspectjrt"/>
+        
+        </iajc>
+        <javac debug="${JAVAC_DEBUG}" destdir="${binaryPath}" encoding="${JAVAC_ENCODING}" failonerror="${JAVAC_FAILONERROR}" includeantruntime="${JAVAC_INCLUDEANTRUNTIME}" includejavaruntime="${JAVAC_INCLUDEJAVARUNTIME}" source="${JAVAC_SOURCE_VERSION}" srcdir="${srcPath1}" target="${JAVAC_TARGET_VERSION}" verbose="${JAVAC_VERBOSE}">
+            
+            <classpath refid="moduleReference"/>
+            
+            <classpath refid="repositoryReference"/>
+            
+            <classpath refid="innerReference"/>
+        
+        </javac>
+    
+    </target>
+    
+    <target name="package" depends="compile">
+        
+        <delete file="${resultPath}"/>
+        
+        <jar basedir="${binaryPath}" compress="false" destfile="${resultPath}">
+            
+            <manifest>
+                
+                <attribute name="Implementation-Title" value="${moduleName}"/>
+                
+                <attribute name="Implementation-Version" value="${version}"/>
+            
+            </manifest>
+            
+            <fileset dir="${srcPath1}" includes="**/**">
+            </fileset>
+            <fileset dir="${srcPath2}" includes="**/**">
+            </fileset>
+        
+        </jar>
+        
+        <delete dir="${binaryPath}"/>
+    
+    </target>
+</project>

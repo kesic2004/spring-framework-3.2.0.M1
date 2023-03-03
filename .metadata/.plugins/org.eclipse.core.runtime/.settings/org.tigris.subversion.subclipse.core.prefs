@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+repositories/https%%%github.com%spring-projects%spring-boot.git/location=https\://github.com/spring-projects/spring-boot.git
+repositories/https%%%github.com%spring-projects%spring-cloud.git/location=https\://github.com/spring-projects/spring-cloud.git
+repositories/https%%%github.com%spring-projects%spring-framework.git/location=https\://github.com/spring-projects/spring-framework.git

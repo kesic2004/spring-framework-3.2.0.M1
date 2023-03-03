@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="src" path="/spring-test" exported="true"/>
+	<classpathentry kind="src" path="/spring-core" exported="true"/>
+	<classpathentry kind="src" path="/spring-beans" exported="true"/>
+	<classpathentry kind="src" path="/spring-context" exported="true"/>
+	<classpathentry kind="src" path="/spring-web" exported="true"/>
+	<classpathentry kind="src" path="/spring-webmvc" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/struts/struts/1.2.9/6ef08e2f66a15ab678c07dd5e17d4e649a22af24/struts-1.2.9-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/struts/struts/1.2.9/1d772f30aff9ae4af06e3e4893fbc116619f2bed/struts-1.2.9.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/junit/junit/4.10/6c98d6766e72d5575f96c9479d1c1d3b865c6e25/junit-4.10-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/junit/junit/4.10/e4f1766ce7404a08f45d859fb9c226fc9e41a861/junit-4.10.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.easymock/easymock/2.5.1/c5561ccd761571499eb5758c2daedb4bae57effc/easymock-2.5.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.easymock/easymock/2.5.1/b52b71f75bbf28fddb7f0334f2e74c080b927d8e/easymock-2.5.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.1/aba64ad8b0365a08ed4435c32e3ee2b2ff16f0a5/hamcrest-all-1.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.1/2ddcad726ed88eab63eb6666c60970db0ac6d44e/hamcrest-all-1.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.0/2818502bbb50bbcbd3f57e92a2bfe4d496f37688/commons-beanutils-1.8.0-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.8.0/c651d5103c649c12b20d53731643e5fffceb536/commons-beanutils-1.8.0.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/commons-validator/commons-validator/1.1.4/bf1ab9a45a7a17aea2ec9adaf0575808fab78996/commons-validator-1.1.4-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/commons-validator/commons-validator/1.1.4/1033bc3f5e304f447d7987f0f5db8c6133d9695b/commons-validator-1.1.4.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/xalan/xalan/2.5.1/d67f15e51f5600b521eaca6ae2da3040bd3975ef/xalan-2.5.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/xalan/xalan/2.5.1/8ee62aa6e698230994c17deb763f15e9c0c4173e/xalan-2.5.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/commons-fileupload/commons-fileupload/1.2/c7859b375ae5bc1b4a4f2b91ce6d1d387e676e61/commons-fileupload-1.2-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/commons-fileupload/commons-fileupload/1.2/a10c06183fe21f3bb3dda3b5946b93db6e2ad5cc/commons-fileupload-1.2.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/f3f156cbff0e0fb0d64bfce31a352cce4a33bc19/commons-logging-1.1.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/commons-digester/commons-digester/1.8.1/3165d0f4fec8cd6836e7a3bc2986b3ff2bd101d/commons-digester-1.8.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/commons-digester/commons-digester/1.8.1/3dec9b9c7ea9342d4dbe8c38560080d85b44a015/commons-digester-1.8.1.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/oro/oro/2.0.8/3598e790ecd76ff7eb249853d4d00822ae1a5e71/oro-2.0.8-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/oro/oro/2.0.8/5592374f834645c4ae250f4c9fbb314c9369d698/oro-2.0.8.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/antlr/antlr/2.7.7/da39a3ee5e6b4b0d3255bfef95601890afd80709/antlr-2.7.7-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/antlr/antlr/2.7.7/83cd2cd674a217ade95a4bb83a8a14f351f48bd0/antlr-2.7.7.jar" exported="true"/>
+	<classpathentry sourcepath="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/2ccf1154d1a8936042a8a742dc3e611d02ac7213/hamcrest-core-1.1-sources.jar" kind="lib" path="F:/real/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.1/860340562250678d1a344907ac75754e259cdb14/hamcrest-core-1.1.jar" exported="true"/>
+</classpath>

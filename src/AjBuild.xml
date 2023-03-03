@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project>
+    
+    <property name="AJ_DEBUG" value="true"/>
+    
+    <property name="AJ_SOURCE_VERSION"     value="1.5" />
+    
+    <property name="AJ_TARGET_VERSION"     value="1.5" />
+</project>

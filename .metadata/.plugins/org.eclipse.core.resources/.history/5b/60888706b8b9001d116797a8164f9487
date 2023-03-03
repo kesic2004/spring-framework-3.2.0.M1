@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project default="package" name="context">
+    
+    <!--根路径，根据实际情况修改. -->
+    
+    <property name="rootPath" value="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1"/>
+    
+    <import file="${rootPath}/src/BaseBuild.xml"/>
+    
+    <import file="${rootPath}/src/AjBuild.xml"/>
+
+    
+    <!--模块名，定义为：模块所在文件夹和输出结果的前缀相同，如spring-core.-->
+    
+    <property name="moduleName" value="spring-${ant.project.name}"/>
+    
+    <!--模块路径.-->
+    
+    <property name="modulePath" value="${rootPath}/${moduleName}"/>
+
+    
+    <!--结果根路径.-->
+    
+    <property name="outputPath" value="${modulePath}/${MY_BUILD}"/>
+
+    
+    <!-- 编译输出路径.-->
+    
+    <property name="binaryPath" value="${outputPath}/bin"/>
+
+    
+    <!-- 源文件路径. -->
+    
+    <property name="srcPath1" value="${modulePath}/src/main/java" />
+    <property name="srcPath2" value="${modulePath}/src/main/resources"/>
+    <!--</property>-->
+
+    
+    <path id="moduleReference">
+        <!--1552809325365-->
+        <!--pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-context/${MY_BUILD}/spring-context-3.2.0.M1.jar"/-->
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-instrument/${MY_BUILD}/spring-instrument-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-beans/${MY_BUILD}/spring-beans-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-core/${MY_BUILD}/spring-core-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-expression/${MY_BUILD}/spring-expression-3.2.0.M1.jar"/>
+        <pathelement location="F:/spring-framework-3.2.x/spring-framework-3.2.0.M1/spring-aop/${MY_BUILD}/spring-aop-3.2.0.M1.jar"/>
+    </path>
+    
+    <path id="innerReference">
+        <!--1552809325372-->
+    </path>
+    
+    <path id="repositoryReference">
+        <!--1552809325372-->
+        <pathelement location="${DEPENDENCE_ROOT}/commons-logging/commons-logging/1.1.1/5043bfebc3db072ed80fbd362e7caf00e885d8ae/commons-logging-1.1.1.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/joda-time/joda-time/1.6/5a18504e34c5cbe9259d6fd0123ccf6f16115a41/joda-time-1.6.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/javax.cache/cache-api/0.5/3c2462271b5a7dde562d23baab1b3708e06a7de4/cache-api-0.5.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/javax.persistence/persistence-api/1.0/5725f57873e05e068803e2bf9d5a8ea3740ffec5/persistence-api-1.0.jar"/>
+        <!--pathelement location="${DEPENDENCE_ROOT}/org.codehaus.jsr166-mirror/jsr166/1.7.0/6946421a8ec41dbd9e2c4cae78267d4cf599928a/jsr166-1.7.0.jar"/-->
+        <pathelement location="${DEPENDENCE_ROOT}/javax.validation/validation-api/1.0.0.GA/b6bd7f9d78f6fdaa3c37dae18a4bd298915f328e/validation-api-1.0.0.GA.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1/bbd68f90d445de37050b1e9fb9d7114e83757e73/geronimo-jms_1.1_spec-1.1.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/net.sf.ehcache/ehcache-core/2.0.0/cc72e55013df1fb7ea39dc1e9989aa6c2a0b9084/ehcache-core-2.0.0.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/org.codehaus.groovy/groovy-all/1.6.3/de9079e59671b9389460ea1d1b009413efe2bc8b/groovy-all-1.6.3.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/org.jruby/jruby/1.4.0/b47d8e6717bf8cf0ad86212bbeeed0b9721ef6c2/jruby-1.4.0.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/javax.ejb/ejb-api/3.0/d4855ba9a1ecd993b751880567ec06ffcbd6fe06/ejb-api-3.0.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/org.beanshell/bsh/2.0b4/a05f0a0feefa8d8467ac80e16e7de071489f0d9c/bsh-2.0b4.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/org.hibernate/hibernate-validator/4.2.0.Final/eac2db0a9d86a9749724fe93d43afffa8106f25e/hibernate-validator-4.2.0.Final.jar"/>
+        <pathelement location="${DEPENDENCE_ROOT}/backport-util-concurrent/backport-util-concurrent/3.0/a193f67b87fe7782a13f1031dce4fa822c0e3599/backport-util-concurrent-3.0.jar"/>
+        <!--pathelement location="${DEPENDENCE_ROOT}/javax.annotation/jsr250-api/1.0/5025422767732a1ab45d93abfea846513d742dcf/jsr250-api-1.0.jar"/-->
+        <!--org.springframework.format.annotation.NumberFormat.Style not found!-->
+        <pathelement location="${DEPENDENCE_ROOT}/cglib/cglib-nodep/2.2/59afed7ab65e7ec6585d5bc60556c3cbd203532b/cglib-nodep-2.2.jar"/>
+        <!--net.sf.cglib.asm.Type not found!-->
+        <!--javax.ejb.PrePassivate not found!-->
+        <!--static org.springframework.context.weaving.AspectJWeavingEnabler.* not found!-->
+        <!--org.springframework.format.annotation.DateTimeFormat.ISO not found!-->
+        <!--org.apache.commons.logging.LogFactory not found!-->
+        <!--net.sf.cglib.proxy.CallbackFilter not found!-->
+        <!--net.sf.cglib.proxy.InterfaceMaker not found!-->
+        <!--static org.springframework.context.annotation.AnnotationConfigUtils.* not found!-->
+        <!--org.hibernate.validator.method.MethodValidator not found!-->
+        <!--javax.ejb.EJBException not found!-->
+        <!--org.apache.commons.logging.Log not found!-->
+        <!--net.sf.cglib.proxy.MethodProxy not found!-->
+        <!--static org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.* not found!-->
+        <!--org.springframework.util.ReflectionUtils.MethodCallback not found!-->
+        <!--net.sf.cglib.proxy.NoOp not found!-->
+        <!--net.sf.cglib.core.Signature not found!-->
+        <!--static org.springframework.context.annotation.MetadataUtils.attributesFor not found!-->
+        <!--org.springframework.context.annotation.EnableLoadTimeWeaving.AspectJWeaving not found!-->
+        <!--net.sf.cglib.proxy.Enhancer not found!-->
+        <!--javax.ejb.EJB not found!-->
+        <!--org.aopalliance.intercept.MethodInterceptor not found!-->
+        <!--org.hibernate.validator.HibernateValidator not found!-->
+        <!--net.sf.cglib.proxy.MethodInterceptor not found!-->
+        <!--net.sf.cglib.proxy.Callback not found!-->
+        <!--javax.ejb.PostActivate not found!-->
+        <!--org.hibernate.validator.method.MethodConstraintViolationException not found!-->
+        <!--org.springframework.cache.Cache.ValueWrapper not found!-->
+        <!--org.aopalliance.aop.Advice not found!-->
+        <!--org.aopalliance.intercept.MethodInvocation not found!-->
+        <!--org.springframework.context.annotation.ConfigurationClassParser.ImportRegistry not found!-->
+        <!--static org.springframework.context.annotation.MetadataUtils.* not found!-->
+        <!--javax.interceptor.InvocationContext not found!-->
+        <pathelement location="${DEPENDENCE_ROOT}/org.aspectj/aspectjweaver/1.6.12/e885e7ba80175986cfd6a84b0ce118407621f11b/aspectjweaver-1.6.12.jar"/>
+        <!--org.aspectj.weaver.loadtime.ClassPreProcessorAgentAdapter not found!-->
+        <!--org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator not found!-->
+        <!--org.hibernate.validator.method.MethodConstraintViolation not found!-->
+    </path>
+
+    
+    <!--当前版本串.-->
+    
+    <property name="version" value="${VERSION}"/>
+    
+    <!--结果文件名.-->
+    
+    <property name="result" value="${moduleName}-${version}.jar"/>
+    
+    <!--结果文件路径.-->
+    
+    <property name="resultPath" value="${outputPath}/${result}"/>
+
+    
+    <target name="compile">
+        
+        <delete dir="${binaryPath}"/>
+        
+        <mkdir dir="${binaryPath}"/>
+        
+        <javac debug="${JAVAC_DEBUG}" destdir="${binaryPath}" encoding="${JAVAC_ENCODING}" failonerror="${JAVAC_FAILONERROR}" includeantruntime="${JAVAC_INCLUDEANTRUNTIME}" includejavaruntime="${JAVAC_INCLUDEJAVARUNTIME}" srcdir="${srcPath1}" verbose="${JAVAC_VERBOSE}">
+            
+            <classpath refid="moduleReference"/>
+            
+            <classpath refid="repositoryReference"/>
+            
+            <classpath refid="innerReference"/>
+        
+        </javac>
+    
+    </target>
+    
+    <target name="package" depends="compile">
+        
+        <delete file="${resultPath}"/>
+        
+        <jar basedir="${binaryPath}" compress="false" destfile="${resultPath}">
+            
+            <manifest>
+                
+                <attribute name="Implementation-Title" value="${moduleName}"/>
+                
+                <attribute name="Implementation-Version" value="${version}"/>
+            
+            </manifest>
+            
+            <fileset dir="${srcPath1}" includes="**/**" />
+            <fileset dir="${srcPath2}" includes="**/**" />
+            <!--</fileset>-->
+        
+        </jar>
+        
+        <delete dir="${binaryPath}"/>
+    
+    </target>
+</project>

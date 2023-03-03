@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="317" key="DIALOG_WIDTH"/>
+		<item value="209" key="DIALOG_Y_ORIGIN"/>
+		<item value="1274" key="DIALOG_X_ORIGIN"/>
+		<item value="436" key="DIALOG_HEIGHT"/>
+		<item value="1|Microsoft YaHei UI|11.25|0|WINDOWS|1|-15|0|0|0|400|0|0|0|-122|3|2|1|34|Microsoft YaHei UI" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="wrap"/>
+		<item value="true" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="org.eclipse.persistence.asm" key="selection"/>
+		<list key="findhistory">
+			<item value="org.eclipse.persistence.asm"/>
+			<item value="org.eclipse.persistence.antlr"/>
+			<item value="Project &apos;&apos; is missing required library: &apos;F:\real\caches\modules-2\files-2.1\"/>
+			<item value="F:/real/caches/modules-2/files-2.1/javax.persistence/persistence-api/1.0/5725f57873e05e068803e2bf9d5a8ea3740ffec5/persistence-api-1.0.jar"/>
+			<item value="F:/real/caches/modules-2/files-2.1/org.aspectj/aspectjweaver/1.6.12/e885e7ba80175986cfd6a84b0ce118407621f11b/aspectjweaver-1.6.12.jar"/>
+			<item value="F:/real/caches/modules-2/files-2.1/taglibs/standard/1.1.2/a17e8a4d9a1f7fcc5eed606721c9ed6b7f18acf7/standard-1.1.2.jar"/>
+			<item value="F:/real/caches/modules-2/files-2.1/org.testng/testng/6.5.2/5069d2e72356ed87645c5fc3622b0bbb5e0667c9/testng-6.5.2.jar"/>
+			<item value="F:/real/caches/modules-2/files-2.1/javax.portlet/portlet-api/2.0/1cd72f2a37fcf8ab9893a9468d7ba71c85fe2653/portlet-api-2.0.jar"/>
+		</list>
+		<list key="replacehistory">
+			<item value=""/>
+			<item value="/--&gt;"/>
+			<item value="/"/>
+			<item value=":"/>
+		</list>
+	</section>
+</section>
