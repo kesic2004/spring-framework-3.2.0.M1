@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-<typeInfo handle="=spring-core/src\/main\/java&lt;org.springframework.core{NestedRuntimeException.java[NestedRuntimeException" modifiers="1025" timestamp="1338236556000"/>
-<typeInfo handle="=spring-core/src\/main\/java&lt;org.springframework.util.xml{DomUtils.java[DomUtils" modifiers="1025" timestamp="1338236556000"/>
-<typeInfo handle="=spring-context/F:\/real\/caches\/modules-2\/files-2.1\/org.apache.geronimo.specs\/geronimo-jta_1.1_spec\/1.1\/fe8d9046737540d728e4b82cf26dcdd8bf4b0eb1\/geronimo-jta_1.1_spec-1.1.jar&lt;javax.transaction(TransactionManager.class[TransactionManager" modifiers="1537" timestamp="1675063604000"/>
-<typeInfo handle="=spring-orm/F:\/real\/caches\/modules-2\/files-2.1\/org.jboss.spec.javax.transaction\/jboss-transaction-api_1.1_spec\/1.0.0.Final\/2ab6236535e085d86f37fd97ddfdd35c88c1a419\/jboss-transaction-api_1.1_spec-1.0.0.Final.jar&lt;javax.transaction(TransactionManager.class[TransactionManager" modifiers="1537" timestamp="1619150442000"/>
-</typeInfoHistroy>
